@@ -19,7 +19,7 @@ The driver can be controlled through these system properties ( using -D from com
 | driverProvider.browserVersion   | <anything>                                  |         | Specifies the required browser version, only used with grid mode |
 
 
-If you wanted to have more control over configuration you could specify you're own configurator:
+If you wanted to have more control over configuration you could specify your own configurator:
 
     DriverProvider.Configuration configuration = new DefaultDriverConfiguration();
     configuration.setMode(Mode.Grid);
