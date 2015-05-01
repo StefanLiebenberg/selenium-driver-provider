@@ -16,10 +16,13 @@ public class SystemDriverConfigurationTest {
     @Before
     public void setup() {
         System.clearProperty(SystemDriverConfiguration.GRID_URL);
+        System.clearProperty(SystemDriverConfiguration.BROWSER_NAME);
+        System.clearProperty(SystemDriverConfiguration.BROWSER_VERSION);
         System.clearProperty(SystemDriverConfiguration.BROWSER);
         System.clearProperty(SystemDriverConfiguration.PLATFORM);
         config = new SystemDriverConfiguration();
     }
+
 
     @Test
     public void testGetMode() throws Exception {
@@ -39,14 +42,20 @@ public class SystemDriverConfigurationTest {
     }
 
     @Test
+    public void testGetBrowserVersionAndName() throws Exception {
+        System.setProperty(SystemDriverConfiguration.BROWSER, "ie:8");
+        assertEquals(DriverProvider.Browser.IE, config.getBrowser());
+        assertEquals("8", config.getBrowserVersion());
+    }
+
+    @Test
     public void testGetBrowser() throws Exception {
         assertEquals(DriverProvider.Browser.ANY, config.getBrowser());
         Arrays.asList(DriverProvider.Browser.values())
                 .forEach(browser -> {
-                    System.setProperty(SystemDriverConfiguration.BROWSER, browser.name());
+                    System.setProperty(SystemDriverConfiguration.BROWSER_NAME, browser.name());
                     assertEquals(browser, config.getBrowser());
                 });
-
     }
 
     @Test

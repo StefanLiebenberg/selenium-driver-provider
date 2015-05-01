@@ -12,9 +12,10 @@ public class SystemDriverConfiguration implements DriverProvider.Configuration {
     public static final String
             MODE = "driverProvider.mode",
             GRID_URL = "driverProvider.gridUrl",
-            BROWSER = "driverProvider.browser",
             PLATFORM = "driverProvider.platform",
-            VERSION = "driverProvider.version";
+            BROWSER = "driverProvider.browser",
+            BROWSER_NAME = "driverProvider.browserName",
+            BROWSER_VERSION = "driverProvider.browserVersion";
 
     public static final String DEFAULT_GRID = "http://localhost:4444/wd/hub";
 
@@ -31,16 +32,46 @@ public class SystemDriverConfiguration implements DriverProvider.Configuration {
         }
     }
 
-    public DriverProvider.Browser getBrowser() {
-        return findValue(System.getProperty(BROWSER), DriverProvider.Browser.values(), DriverProvider.Browser.ANY);
+
+    private String[] parts() {
+        String browser = System.getProperty(BROWSER);
+        if (browser != null) {
+            return browser.split(":");
+        } else {
+            return null;
+        }
     }
+
+    @Override
+    public DriverProvider.Browser getBrowser() {
+        String browserName = System.getProperty(BROWSER_NAME);
+
+        if (browserName == null) {
+            String[] browserParts = parts();
+            if (browserParts != null && browserParts.length > 0) {
+                browserName = browserParts[0];
+            }
+        }
+
+        return findValue(browserName, DriverProvider.Browser.values(), DriverProvider.Browser.ANY);
+    }
+
 
     public Platform getPlatform() {
         return findValue(System.getProperty(PLATFORM), Platform.values(), Platform.ANY);
     }
 
     public String getBrowserVersion() {
-        return System.getProperty(VERSION, null);
+        String browserVersion = System.getProperty(BROWSER_VERSION);
+
+        if (browserVersion == null) {
+            String[] browserParts = parts();
+            if (browserParts != null && browserParts.length > 1) {
+                browserVersion = browserParts[1];
+            }
+        }
+
+        return browserVersion;
     }
 
     private <T extends Enum> T findValue(String query, T[] enums, T defaultValue) {
