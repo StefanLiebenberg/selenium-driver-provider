@@ -6,7 +6,6 @@
 
     <groupId>com.betgenius</groupId>
     <artifactId>selenium-driver-provider</artifactId>
-    <version>1.1-SNAPSHOT</version>
     <version>1.0</version>
     <url>https://github.com/betgenius/selenium-driver-provider</url>
 
@@ -38,8 +37,6 @@
         <plugin.maven-source-plugin>2.4</plugin.maven-source-plugin>
         <plugin.site-maven-plugin>0.11</plugin.site-maven-plugin>
         <plugin.maven-resources-plugin>2.7</plugin.maven-resources-plugin>
-
-
         <plugin.maven-project-info-reports-plugin>2.8</plugin.maven-project-info-reports-plugin>
         <plugin.maven-shared-jar>1.1</plugin.maven-shared-jar>
         <plugin.bcel-findbugs>6.0</plugin.bcel-findbugs>
