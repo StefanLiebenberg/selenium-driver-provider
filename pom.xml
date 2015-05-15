@@ -47,7 +47,7 @@
         <dep.junit>4.12</dep.junit>
         <dep.mockito>2.0.2-beta</dep.mockito>
         <dep.selenium>2.45.0</dep.selenium>
-        <dep.phantomjsdriver>0</dep.phantomjsdriver>
+        <dep.phantomjsdriver>1.2.1</dep.phantomjsdriver>
     </properties>
 
     <prerequisites>
