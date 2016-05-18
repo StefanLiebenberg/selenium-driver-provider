@@ -1,4 +1,4 @@
-package com.betgenius.selenium;
+package org.slieb.selenium;
 
 
 import org.openqa.selenium.remote.DesiredCapabilities;

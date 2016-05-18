@@ -1,11 +1,9 @@
-package com.betgenius.selenium;
-
+package org.slieb.selenium;
 
 import org.openqa.selenium.Platform;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Arrays;
 
 public class SystemDriverConfiguration implements DriverProvider.Configuration {
 
@@ -19,7 +17,6 @@ public class SystemDriverConfiguration implements DriverProvider.Configuration {
 
     public static final String DEFAULT_GRID = "http://localhost:4444/wd/hub";
 
-
     public DriverProvider.Mode getMode() {
         return findValue(System.getProperty(MODE), DriverProvider.Mode.values(), DriverProvider.Mode.LOCAL);
     }
@@ -31,7 +28,6 @@ public class SystemDriverConfiguration implements DriverProvider.Configuration {
             throw new RuntimeException(e);
         }
     }
-
 
     private String[] parts() {
         String browser = System.getProperty(BROWSER);
@@ -56,7 +52,6 @@ public class SystemDriverConfiguration implements DriverProvider.Configuration {
         return findValue(browserName, DriverProvider.Browser.values(), DriverProvider.Browser.ANY);
     }
 
-
     public Platform getPlatform() {
         return findValue(System.getProperty(PLATFORM), Platform.values(), Platform.ANY);
     }
@@ -76,15 +71,14 @@ public class SystemDriverConfiguration implements DriverProvider.Configuration {
 
     private <T extends Enum> T findValue(String query, T[] enums, T defaultValue) {
         if (query != null) {
-            return Arrays.asList(enums)
-                    .stream()
-                    .filter(m -> m.name().equalsIgnoreCase(query))
-                    .findFirst().orElse(defaultValue);
-        } else {
-            return defaultValue;
+            for (final T anEnum : enums) {
+                if (query.equalsIgnoreCase(anEnum.name())) {
+                    return anEnum;
+                }
+            }
         }
+        return defaultValue;
     }
-
 }
 
 

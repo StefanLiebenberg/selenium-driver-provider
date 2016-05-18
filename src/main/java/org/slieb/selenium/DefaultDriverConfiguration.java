@@ -1,22 +1,21 @@
-package com.betgenius.selenium;
-
+package org.slieb.selenium;
 
 import org.openqa.selenium.Platform;
 
 import java.net.URL;
 
+@SuppressWarnings("WeakerAccess")
 public class DefaultDriverConfiguration implements DriverProvider.Configuration {
 
+    private URL gridUrl;
 
-    URL gridUrl;
+    private DriverProvider.Mode mode;
 
-    DriverProvider.Mode mode;
+    private DriverProvider.Browser browser;
 
-    DriverProvider.Browser browser;
+    private Platform platform;
 
-    Platform platform;
-
-    String browserVersion = null;
+    private String browserVersion = null;
 
     @Override
     public DriverProvider.Mode getMode() {
@@ -51,7 +50,6 @@ public class DefaultDriverConfiguration implements DriverProvider.Configuration 
 
     public void setBrowser(DriverProvider.Browser browser) {
         this.browser = browser;
-
     }
 
     @Override
