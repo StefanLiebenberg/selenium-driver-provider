@@ -1,4 +1,4 @@
-package com.betgenius.selenium;
+package org.slieb.selenium;
 
 import org.junit.Assert;
 import org.junit.Before;

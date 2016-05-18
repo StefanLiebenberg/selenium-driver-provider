@@ -1,4 +1,4 @@
-package com.betgenius.selenium;
+package org.slieb.selenium;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,7 +7,6 @@ import org.openqa.selenium.Platform;
 import java.util.Arrays;
 
 import static org.junit.Assert.*;
-
 
 public class SystemDriverConfigurationTest {
 
@@ -22,7 +21,6 @@ public class SystemDriverConfigurationTest {
         System.clearProperty(SystemDriverConfiguration.PLATFORM);
         config = new SystemDriverConfiguration();
     }
-
 
     @Test
     public void testGetMode() throws Exception {
@@ -51,26 +49,23 @@ public class SystemDriverConfigurationTest {
     @Test
     public void testGetBrowser() throws Exception {
         assertEquals(DriverProvider.Browser.ANY, config.getBrowser());
-        Arrays.asList(DriverProvider.Browser.values())
-                .forEach(browser -> {
-                    System.setProperty(SystemDriverConfiguration.BROWSER_NAME, browser.name());
-                    assertEquals(browser, config.getBrowser());
-                });
+        for (DriverProvider.Browser browser : Arrays.asList(DriverProvider.Browser.values())) {
+            System.setProperty(SystemDriverConfiguration.BROWSER_NAME, browser.name());
+            assertEquals(browser, config.getBrowser());
+        }
     }
 
     @Test
     public void testGetPlatform() throws Exception {
         assertEquals(Platform.ANY, config.getPlatform());
-        Arrays.asList(Platform.values()).forEach(platform -> {
+        for (Platform platform : Arrays.asList(Platform.values())) {
             System.setProperty(SystemDriverConfiguration.PLATFORM, platform.name());
             assertEquals(platform, config.getPlatform());
-        });
-
+        }
     }
 
     @Test
     public void testGetBrowserVersion() throws Exception {
         assertNull(config.getBrowserVersion());
     }
-
 }
