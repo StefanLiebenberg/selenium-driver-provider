@@ -26,7 +26,7 @@
           
                 <div class="xleft">
         <span id="publishDate">Last Published: 2016-05-18</span>
-                  &nbsp;| <span id="projectVersion">Version: 1.2-SNAPSHOT</span>
+                  &nbsp;| <span id="projectVersion">Version: 1.2</span>
                       </div>
             <div class="xright">                    <a href="./" title="selenium-driver-provider">selenium-driver-provider</a>
             
@@ -56,22 +56,22 @@
                           <a href="index.html" title="About">About</a>
             </li>
                       <li class="none">
-                          <a href="license.html" title="Project License">Project License</a>
+                          <a href="license.html" title="Licenses">Licenses</a>
             </li>
                       <li class="none">
                           <a href="plugin-management.html" title="Plugin Management">Plugin Management</a>
             </li>
                       <li class="none">
-                          <a href="plugins.html" title="Project Plugins">Project Plugins</a>
+                          <a href="plugins.html" title="Plugins">Plugins</a>
             </li>
                       <li class="none">
-                          <a href="team-list.html" title="Project Team">Project Team</a>
+                          <a href="team-list.html" title="Team">Team</a>
             </li>
                       <li class="none">
-                          <a href="source-repository.html" title="Source Repository">Source Repository</a>
+                          <a href="source-repository.html" title="Source Code Management">Source Code Management</a>
             </li>
                       <li class="none">
-                          <a href="project-summary.html" title="Project Summary">Project Summary</a>
+                          <a href="project-summary.html" title="Summary">Summary</a>
             </li>
               </ul>
         </li>
@@ -99,7 +99,7 @@
 <th>ArtifactId</th>
 <th>Version</th>
 <th>Type</th>
-<th>License</th></tr>
+<th>Licenses</th></tr>
 <tr class="b">
 <td>com.codeborne</td>
 <td><a class="externalLink" href="https://github.com/codeborne/ghostdriver">phantomjsdriver</a></td>
@@ -157,7 +157,7 @@
 <th>ArtifactId</th>
 <th>Version</th>
 <th>Type</th>
-<th>License</th></tr>
+<th>Licenses</th></tr>
 <tr class="b">
 <td>junit</td>
 <td><a class="externalLink" href="http://junit.org">junit</a></td>
@@ -182,7 +182,7 @@
 <th>ArtifactId</th>
 <th>Version</th>
 <th>Type</th>
-<th>License</th></tr>
+<th>Licenses</th></tr>
 <tr class="b">
 <td>cglib</td>
 <td><a class="externalLink" href="http://cglib.sourceforge.net/">cglib-nodep</a></td>
@@ -282,7 +282,7 @@
 <th>ArtifactId</th>
 <th>Version</th>
 <th>Type</th>
-<th>License</th></tr>
+<th>Licenses</th></tr>
 <tr class="b">
 <td>org.hamcrest</td>
 <td><a class="externalLink" href="https://github.com/hamcrest/JavaHamcrest/hamcrest-core">hamcrest-core</a></td>
@@ -290,8 +290,9 @@
 <td>jar</td>
 <td><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a></td></tr></table></div></div><a name="Project_Dependency_Graph"></a>
 <div class="section">
-<h2><a name="Project_Dependency_Graph"></a>Project Dependency Graph</h2><script language="javascript" type="text/javascript">
-      function toggleDependencyDetail( divId, imgId )
+<h2><a name="Project_Dependency_Graph"></a>Project Dependency Graph</h2>
+<script language="javascript" type="text/javascript">
+      function toggleDependencyDetails( divId, imgId )
       {
         var div = document.getElementById( divId );
         var img = document.getElementById( imgId );
@@ -299,11 +300,13 @@
         {
           div.style.display = 'none';
           img.src='./images/icon_info_sml.gif';
+          img.alt='[Information]';
         }
         else
         {
           div.style.display = '';
           img.src='./images/close.gif';
+          img.alt='[Close]';
         }
       }
 </script>
@@ -311,17 +314,17 @@
 <div class="section">
 <h3><a name="Dependency_Tree"></a>Dependency Tree</h3>
 <ul>
-<li>org.slieb:selenium-driver-provider:jar:1.2-SNAPSHOT <img id="_img1" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep0', '_img1' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep0" style="display:none">
+<li>org.slieb:selenium-driver-provider:jar:1.2 <img id="_img1" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep0', '_img1' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep0" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-driver-provider</th></tr>
 <tr class="b">
 <td>
-<p><b>Description: </b>A library that provides a easy way to get resources from multiple locations</p>
+<p><b>Description: </b>A library to control the selection of web drivers from environment variables.</p>
 <p><b>URL: </b><a class="externalLink" href="https://github.com/StefanLiebenberg/selenium-driver-provider">https://github.com/StefanLiebenberg/selenium-driver-provider</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.opensource.org/licenses/mit-license.php">MIT License</a></p></td></tr></table></div>
 <ul>
-<li>org.seleniumhq.selenium:selenium-remote-driver:jar:2.53.0 (compile) <img id="_img3" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep2', '_img3' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep2" style="display:none">
+<li>org.seleniumhq.selenium:selenium-remote-driver:jar:2.53.0 (compile) <img id="_img3" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep2', '_img3' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep2" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-remote-driver</th></tr>
@@ -329,9 +332,9 @@
 <td>
 <p><b>Description: </b>Selenium automates browsers. That's it! What you do with that power is entirely up to you.</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.seleniumhq.org/selenium-remote-driver/">http://www.seleniumhq.org/selenium-remote-driver/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>cglib:cglib-nodep:jar:2.1_3 (compile) <img id="_img5" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep4', '_img5' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep4" style="display:none">
+<li>cglib:cglib-nodep:jar:2.1_3 (compile) <img id="_img5" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep4', '_img5' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep4" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>cglib</th></tr>
@@ -339,8 +342,8 @@
 <td>
 <p><b>Description: </b>There is currently no description associated with this project.</p>
 <p><b>URL: </b><a class="externalLink" href="http://cglib.sourceforge.net/">http://cglib.sourceforge.net/</a></p>
-<p><b>Project License: </b>No license is defined for this project.</p></td></tr></table></div></li>
-<li>com.google.code.gson:gson:jar:2.3.1 (compile) <img id="_img7" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep6', '_img7' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep6" style="display:none">
+<p><b>Project Licenses: </b>No licenses are defined for this project.</p></td></tr></table></div></li>
+<li>com.google.code.gson:gson:jar:2.3.1 (compile) <img id="_img7" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep6', '_img7' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep6" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Gson</th></tr>
@@ -348,8 +351,8 @@
 <td>
 <p><b>Description: </b>Google Gson library</p>
 <p><b>URL: </b><a class="externalLink" href="http://code.google.com/p/google-gson/">http://code.google.com/p/google-gson/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.seleniumhq.selenium:selenium-api:jar:2.53.0 (compile) <img id="_img9" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep8', '_img9' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep8" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.seleniumhq.selenium:selenium-api:jar:2.53.0 (compile) <img id="_img9" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep8', '_img9' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep8" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-api</th></tr>
@@ -357,8 +360,8 @@
 <td>
 <p><b>Description: </b>Selenium automates browsers. That's it! What you do with that power is entirely up to you.</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.seleniumhq.org/selenium-api/">http://www.seleniumhq.org/selenium-api/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.apache.httpcomponents:httpclient:jar:4.5.1 (compile) <img id="_img11" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep10', '_img11' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep10" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.apache.httpcomponents:httpclient:jar:4.5.1 (compile) <img id="_img11" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep10', '_img11' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep10" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Apache HttpClient</th></tr>
@@ -366,9 +369,9 @@
 <td>
 <p><b>Description: </b>Apache HttpComponents Client</p>
 <p><b>URL: </b><a class="externalLink" href="http://hc.apache.org/httpcomponents-client">http://hc.apache.org/httpcomponents-client</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>org.apache.httpcomponents:httpcore:jar:4.4.3 (compile) <img id="_img13" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep12', '_img13' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep12" style="display:none">
+<li>org.apache.httpcomponents:httpcore:jar:4.4.3 (compile) <img id="_img13" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep12', '_img13' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep12" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Apache HttpCore</th></tr>
@@ -376,8 +379,8 @@
 <td>
 <p><b>Description: </b>Apache HttpComponents Core (blocking I/O)</p>
 <p><b>URL: </b><a class="externalLink" href="http://hc.apache.org/httpcomponents-core-ga">http://hc.apache.org/httpcomponents-core-ga</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div></li>
-<li>commons-logging:commons-logging:jar:1.2 (compile) <img id="_img15" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep14', '_img15' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep14" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div></li>
+<li>commons-logging:commons-logging:jar:1.2 (compile) <img id="_img15" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep14', '_img15' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep14" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Apache Commons Logging</th></tr>
@@ -386,8 +389,8 @@
 <p><b>Description: </b>Apache Commons Logging is a thin adapter allowing configurable bridging to other,
     well known logging systems.</p>
 <p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/proper/commons-logging/">http://commons.apache.org/proper/commons-logging/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>commons-codec:commons-codec:jar:1.9 (compile) <img id="_img17" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep16', '_img17' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep16" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>commons-codec:commons-codec:jar:1.9 (compile) <img id="_img17" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep16', '_img17' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep16" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Apache Commons Codec</th></tr>
@@ -398,8 +401,8 @@
      widely used encoders and decoders, the codec package also maintains a
      collection of phonetic encoding utilities.</p>
 <p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/proper/commons-codec/">http://commons.apache.org/proper/commons-codec/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
-<li>com.google.guava:guava:jar:19.0 (compile) <img id="_img19" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep18', '_img19' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep18" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
+<li>com.google.guava:guava:jar:19.0 (compile) <img id="_img19" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep18', '_img19' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep18" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Guava: Google Core Libraries for Java</th></tr>
@@ -412,8 +415,8 @@
     Guava has only one code dependency - javax.annotation,
     per the JSR-305 spec.</p>
 <p><b>URL: </b><a class="externalLink" href="https://github.com/google/guava/guava">https://github.com/google/guava/guava</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.apache.commons:commons-exec:jar:1.3 (compile) <img id="_img21" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep20', '_img21' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep20" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.apache.commons:commons-exec:jar:1.3 (compile) <img id="_img21" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep20', '_img21' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep20" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Apache Commons Exec</th></tr>
@@ -421,8 +424,8 @@
 <td>
 <p><b>Description: </b>Apache Commons Exec is a library to reliably execute external processes from within the JVM.</p>
 <p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/proper/commons-exec/">http://commons.apache.org/proper/commons-exec/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div></li>
-<li>net.java.dev.jna:jna:jar:4.1.0 (compile) <img id="_img23" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep22', '_img23' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep22" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">Apache License, Version 2.0</a></p></td></tr></table></div></li>
+<li>net.java.dev.jna:jna:jar:4.1.0 (compile) <img id="_img23" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep22', '_img23' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep22" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Java Native Access</th></tr>
@@ -430,8 +433,8 @@
 <td>
 <p><b>Description: </b>Java Native Access</p>
 <p><b>URL: </b><a class="externalLink" href="https://github.com/twall/jna">https://github.com/twall/jna</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.gnu.org/licenses/licenses.html">LGPL, version 2.1</a>, <a class="externalLink" href="http://www.apache.org/licenses/">ASL, version 2</a></p></td></tr></table></div></li>
-<li>net.java.dev.jna:jna-platform:jar:4.1.0 (compile) <img id="_img25" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep24', '_img25' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep24" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.gnu.org/licenses/licenses.html">LGPL, version 2.1</a>, <a class="externalLink" href="http://www.apache.org/licenses/">ASL, version 2</a></p></td></tr></table></div></li>
+<li>net.java.dev.jna:jna-platform:jar:4.1.0 (compile) <img id="_img25" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep24', '_img25' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep24" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Java Native Access Platform</th></tr>
@@ -439,8 +442,8 @@
 <td>
 <p><b>Description: </b>Java Native Access Platform</p>
 <p><b>URL: </b><a class="externalLink" href="https://github.com/twall/jna">https://github.com/twall/jna</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.gnu.org/licenses/licenses.html">LGPL, version 2.1</a>, <a class="externalLink" href="http://www.apache.org/licenses/">ASL, version 2</a></p></td></tr></table></div></li></ul></li>
-<li>org.seleniumhq.selenium:selenium-java:jar:2.53.0 (compile) <img id="_img27" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep26', '_img27' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep26" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.gnu.org/licenses/licenses.html">LGPL, version 2.1</a>, <a class="externalLink" href="http://www.apache.org/licenses/">ASL, version 2</a></p></td></tr></table></div></li></ul></li>
+<li>org.seleniumhq.selenium:selenium-java:jar:2.53.0 (compile) <img id="_img27" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep26', '_img27' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep26" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-java</th></tr>
@@ -448,9 +451,9 @@
 <td>
 <p><b>Description: </b>Selenium automates browsers. That's it! What you do with that power is entirely up to you.</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.seleniumhq.org/selenium-java/">http://www.seleniumhq.org/selenium-java/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>org.seleniumhq.selenium:selenium-edge-driver:jar:2.53.0 (compile) <img id="_img29" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep28', '_img29' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep28" style="display:none">
+<li>org.seleniumhq.selenium:selenium-edge-driver:jar:2.53.0 (compile) <img id="_img29" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep28', '_img29' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep28" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-edge-driver</th></tr>
@@ -458,8 +461,8 @@
 <td>
 <p><b>Description: </b>Selenium automates browsers. That's it! What you do with that power is entirely up to you.</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.seleniumhq.org/selenium-edge-driver/">http://www.seleniumhq.org/selenium-edge-driver/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.seleniumhq.selenium:selenium-leg-rc:jar:2.53.0 (compile) <img id="_img31" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep30', '_img31' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep30" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.seleniumhq.selenium:selenium-leg-rc:jar:2.53.0 (compile) <img id="_img31" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep30', '_img31' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep30" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-leg-rc</th></tr>
@@ -467,8 +470,8 @@
 <td>
 <p><b>Description: </b>Selenium automates browsers. That's it! What you do with that power is entirely up to you.</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.seleniumhq.org/selenium-leg-rc/">http://www.seleniumhq.org/selenium-leg-rc/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
-<li>org.seleniumhq.selenium:selenium-support:jar:2.53.0 (compile) <img id="_img33" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep32', '_img33' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep32" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
+<li>org.seleniumhq.selenium:selenium-support:jar:2.53.0 (compile) <img id="_img33" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep32', '_img33' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep32" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-support</th></tr>
@@ -476,8 +479,8 @@
 <td>
 <p><b>Description: </b>Selenium automates browsers. That's it! What you do with that power is entirely up to you.</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.seleniumhq.org/selenium-support/">http://www.seleniumhq.org/selenium-support/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.seleniumhq.selenium:selenium-chrome-driver:jar:2.53.0 (compile) <img id="_img35" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep34', '_img35' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep34" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.seleniumhq.selenium:selenium-chrome-driver:jar:2.53.0 (compile) <img id="_img35" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep34', '_img35' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep34" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-chrome-driver</th></tr>
@@ -485,8 +488,8 @@
 <td>
 <p><b>Description: </b>Selenium automates browsers. That's it! What you do with that power is entirely up to you.</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.seleniumhq.org/selenium-chrome-driver/">http://www.seleniumhq.org/selenium-chrome-driver/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.seleniumhq.selenium:selenium-firefox-driver:jar:2.53.0 (compile) <img id="_img37" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep36', '_img37' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep36" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.seleniumhq.selenium:selenium-firefox-driver:jar:2.53.0 (compile) <img id="_img37" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep36', '_img37' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep36" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-firefox-driver</th></tr>
@@ -494,9 +497,9 @@
 <td>
 <p><b>Description: </b>Selenium automates browsers. That's it! What you do with that power is entirely up to you.</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.seleniumhq.org/selenium-firefox-driver/">http://www.seleniumhq.org/selenium-firefox-driver/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>commons-io:commons-io:jar:2.4 (compile) <img id="_img39" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep38', '_img39' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep38" style="display:none">
+<li>commons-io:commons-io:jar:2.4 (compile) <img id="_img39" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep38', '_img39' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep38" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Commons IO</th></tr>
@@ -505,8 +508,8 @@
 <p><b>Description: </b>The Commons IO library contains utility classes, stream implementations, file filters, 
 file comparators, endian transformation classes, and much more.</p>
 <p><b>URL: </b><a class="externalLink" href="http://commons.apache.org/io/">http://commons.apache.org/io/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
-<li>org.seleniumhq.selenium:selenium-ie-driver:jar:2.53.0 (compile) <img id="_img41" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep40', '_img41' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep40" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
+<li>org.seleniumhq.selenium:selenium-ie-driver:jar:2.53.0 (compile) <img id="_img41" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep40', '_img41' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep40" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-ie-driver</th></tr>
@@ -514,8 +517,8 @@ file comparators, endian transformation classes, and much more.</p>
 <td>
 <p><b>Description: </b>Selenium automates browsers. That's it! What you do with that power is entirely up to you.</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.seleniumhq.org/selenium-ie-driver/">http://www.seleniumhq.org/selenium-ie-driver/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
-<li>org.seleniumhq.selenium:selenium-safari-driver:jar:2.53.0 (compile) <img id="_img43" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep42', '_img43' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep42" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div></li>
+<li>org.seleniumhq.selenium:selenium-safari-driver:jar:2.53.0 (compile) <img id="_img43" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep42', '_img43' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep42" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>selenium-safari-driver</th></tr>
@@ -523,9 +526,9 @@ file comparators, endian transformation classes, and much more.</p>
 <td>
 <p><b>Description: </b>Selenium automates browsers. That's it! What you do with that power is entirely up to you.</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.seleniumhq.org/selenium-safari-driver/">http://www.seleniumhq.org/selenium-safari-driver/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0.txt">The Apache Software License, Version 2.0</a></p></td></tr></table></div>
 <ul>
-<li>io.netty:netty:jar:3.5.7.Final (compile) <img id="_img45" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep44', '_img45' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep44" style="display:none">
+<li>io.netty:netty:jar:3.5.7.Final (compile) <img id="_img45" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep44', '_img45' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep44" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>The Netty Project</th></tr>
@@ -539,8 +542,8 @@ file comparators, endian transformation classes, and much more.</p>
     servers and clients. It greatly simplifies and streamlines network
     programming such as TCP and UDP socket server.</p>
 <p><b>URL: </b><a class="externalLink" href="http://netty.io/">http://netty.io/</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
-<li>com.codeborne:phantomjsdriver:jar:1.3.0 (compile) <img id="_img47" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep46', '_img47' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep46" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p></td></tr></table></div></li></ul></li>
+<li>com.codeborne:phantomjsdriver:jar:1.3.0 (compile) <img id="_img47" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep46', '_img47' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep46" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>PhantomJSDriver</th></tr>
@@ -550,8 +553,8 @@ file comparators, endian transformation classes, and much more.</p>
                                 The binding is developed within the GhostDriver project, and distributed through public Maven repository
                                 and Selenium official .zip package.</p>
 <p><b>URL: </b><a class="externalLink" href="https://github.com/codeborne/ghostdriver">https://github.com/codeborne/ghostdriver</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://opensource.org/licenses/BSD-2-Clause">The BSD 2-Clause License</a></p></td></tr></table></div></li>
-<li>junit:junit:jar:4.12 (test) <img id="_img49" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep48', '_img49' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep48" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://opensource.org/licenses/BSD-2-Clause">The BSD 2-Clause License</a></p></td></tr></table></div></li>
+<li>junit:junit:jar:4.12 (test) <img id="_img49" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep48', '_img49' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep48" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>JUnit</th></tr>
@@ -559,9 +562,9 @@ file comparators, endian transformation classes, and much more.</p>
 <td>
 <p><b>Description: </b>JUnit is a unit testing framework for Java, created by Erich Gamma and Kent Beck.</p>
 <p><b>URL: </b><a class="externalLink" href="http://junit.org">http://junit.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a></p></td></tr></table></div>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a></p></td></tr></table></div>
 <ul>
-<li>org.hamcrest:hamcrest-core:jar:1.3 (test) <img id="_img51" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep50', '_img51' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep50" style="display:none">
+<li>org.hamcrest:hamcrest-core:jar:1.3 (test) <img id="_img51" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep50', '_img51' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep50" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Hamcrest Core</th></tr>
@@ -569,8 +572,8 @@ file comparators, endian transformation classes, and much more.</p>
 <td>
 <p><b>Description: </b>This is the core API of hamcrest matcher framework to be used by third-party framework providers. This includes the a foundation set of matcher implementations for common operations.</p>
 <p><b>URL: </b><a class="externalLink" href="https://github.com/hamcrest/JavaHamcrest/hamcrest-core">https://github.com/hamcrest/JavaHamcrest/hamcrest-core</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a></p></td></tr></table></div></li></ul></li>
-<li>org.mockito:mockito-all:jar:2.0.2-beta (test) <img id="_img53" src="./images/icon_info_sml.gif" alt="Information" onclick="toggleDependencyDetail( '_dep52', '_img53' );" style="cursor: pointer;vertical-align:text-bottom;"></img><div id="_dep52" style="display:none">
+<p><b>Project Licenses: </b><a class="externalLink" href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a></p></td></tr></table></div></li></ul></li>
+<li>org.mockito:mockito-all:jar:2.0.2-beta (test) <img id="_img53" src="./images/icon_info_sml.gif" alt="[Information]" onclick="toggleDependencyDetails( '_dep52', '_img53' );" style="cursor: pointer; vertical-align: text-bottom;"></img><div id="_dep52" style="display:none">
 <table border="0" class="bodyTable">
 <tr class="a">
 <th>Mockito</th></tr>
@@ -578,7 +581,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>
 <p><b>Description: </b>Mock objects library for java</p>
 <p><b>URL: </b><a class="externalLink" href="http://www.mockito.org">http://www.mockito.org</a></p>
-<p><b>Project License: </b><a class="externalLink" href="http://github.com/mockito/mockito/blob/master/LICENSE">The MIT License</a></p></td></tr></table></div></li></ul></li></ul></div></div><a name="Licenses"></a>
+<p><b>Project Licenses: </b><a class="externalLink" href="http://github.com/mockito/mockito/blob/master/LICENSE">The MIT License</a></p></td></tr></table></div></li></ul></li></ul></div></div><a name="Licenses"></a>
 <div class="section">
 <h2><a name="Licenses"></a>Licenses</h2>
 <p><b>Unknown: </b>cglib</p>
@@ -604,7 +607,7 @@ file comparators, endian transformation classes, and much more.</p>
 <th title="Indicates whether these dependencies have been compiled with debug information.">Debug Information</th></tr>
 <tr class="b">
 <td>cglib-nodep-2.1_3.jar</td>
-<td>324.24 kB</td>
+<td>324.2 kB</td>
 <td>262</td>
 <td>258</td>
 <td>10</td>
@@ -612,15 +615,15 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="a">
 <td>phantomjsdriver-1.3.0.jar</td>
-<td>11.58 kB</td>
+<td>11.6 kB</td>
 <td>12</td>
 <td>6</td>
 <td>1</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>Yes</td></tr>
 <tr class="b">
 <td>gson-2.3.1.jar</td>
-<td>210.86 kB</td>
+<td>210.9 kB</td>
 <td>175</td>
 <td>165</td>
 <td>6</td>
@@ -628,7 +631,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="a">
 <td>guava-19.0.jar</td>
-<td>2.31 MB</td>
+<td>2.3 MB</td>
 <td>1746</td>
 <td>1717</td>
 <td>17</td>
@@ -636,7 +639,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="b">
 <td>commons-codec-1.9.jar</td>
-<td>263.96 kB</td>
+<td>264 kB</td>
 <td>227</td>
 <td>85</td>
 <td>6</td>
@@ -644,7 +647,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="a">
 <td>commons-io-2.4.jar</td>
-<td>185.14 kB</td>
+<td>185.1 kB</td>
 <td>128</td>
 <td>110</td>
 <td>6</td>
@@ -652,7 +655,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="b">
 <td>commons-logging-1.2.jar</td>
-<td>61.83 kB</td>
+<td>61.8 kB</td>
 <td>42</td>
 <td>28</td>
 <td>2</td>
@@ -660,7 +663,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="a">
 <td>netty-3.5.7.Final.jar</td>
-<td>1.11 MB</td>
+<td>1.1 MB</td>
 <td>795</td>
 <td>727</td>
 <td>41</td>
@@ -668,7 +671,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="b">
 <td>junit-4.12.jar</td>
-<td>314.93 kB</td>
+<td>314.9 kB</td>
 <td>323</td>
 <td>286</td>
 <td>30</td>
@@ -676,7 +679,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="a">
 <td>jna-4.1.0.jar</td>
-<td>914.60 kB</td>
+<td>914.6 kB</td>
 <td>141</td>
 <td>104</td>
 <td>3</td>
@@ -684,7 +687,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="b">
 <td>jna-platform-4.1.0.jar</td>
-<td>1.46 MB</td>
+<td>1.5 MB</td>
 <td>671</td>
 <td>638</td>
 <td>9</td>
@@ -692,7 +695,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="a">
 <td>commons-exec-1.3.jar</td>
-<td>54.42 kB</td>
+<td>54.4 kB</td>
 <td>53</td>
 <td>37</td>
 <td>4</td>
@@ -700,7 +703,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="b">
 <td>httpclient-4.5.1.jar</td>
-<td>732.77 kB</td>
+<td>732.8 kB</td>
 <td>502</td>
 <td>461</td>
 <td>24</td>
@@ -708,7 +711,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="a">
 <td>httpcore-4.4.3.jar</td>
-<td>326.59 kB</td>
+<td>326.6 kB</td>
 <td>284</td>
 <td>254</td>
 <td>17</td>
@@ -716,7 +719,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="b">
 <td>hamcrest-core-1.3.jar</td>
-<td>45.02 kB</td>
+<td>45 kB</td>
 <td>52</td>
 <td>45</td>
 <td>3</td>
@@ -724,7 +727,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="a">
 <td>mockito-all-2.0.2-beta.jar</td>
-<td>1.23 MB</td>
+<td>1.2 MB</td>
 <td>1215</td>
 <td>752</td>
 <td>79</td>
@@ -732,47 +735,47 @@ file comparators, endian transformation classes, and much more.</p>
 <td>Yes</td></tr>
 <tr class="b">
 <td>selenium-api-2.53.0.jar</td>
-<td>145.75 kB</td>
+<td>145.7 kB</td>
 <td>201</td>
 <td>179</td>
 <td>11</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>Yes</td></tr>
 <tr class="a">
 <td>selenium-chrome-driver-2.53.0.jar</td>
-<td>10.99 kB</td>
+<td>11 kB</td>
 <td>17</td>
 <td>6</td>
 <td>1</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>Yes</td></tr>
 <tr class="b">
 <td>selenium-edge-driver-2.53.0.jar</td>
-<td>6.37 kB</td>
+<td>6.4 kB</td>
 <td>15</td>
 <td>4</td>
 <td>1</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>Yes</td></tr>
 <tr class="a">
 <td>selenium-firefox-driver-2.53.0.jar</td>
-<td>821.99 kB</td>
+<td>822 kB</td>
 <td>43</td>
 <td>23</td>
 <td>2</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>Yes</td></tr>
 <tr class="b">
 <td>selenium-ie-driver-2.53.0.jar</td>
-<td>11.54 kB</td>
+<td>11.5 kB</td>
 <td>17</td>
 <td>6</td>
 <td>1</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>Yes</td></tr>
 <tr class="a">
 <td>selenium-java-2.53.0.jar</td>
-<td>2.11 kB</td>
+<td>2.1 kB</td>
 <td>7</td>
 <td>0</td>
 <td>0</td>
@@ -780,35 +783,35 @@ file comparators, endian transformation classes, and much more.</p>
 <td>No</td></tr>
 <tr class="b">
 <td>selenium-leg-rc-2.53.0.jar</td>
-<td>400.40 kB</td>
+<td>400.4 kB</td>
 <td>178</td>
 <td>146</td>
 <td>5</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>Yes</td></tr>
 <tr class="a">
 <td>selenium-remote-driver-2.53.0.jar</td>
-<td>234.53 kB</td>
+<td>234.5 kB</td>
 <td>177</td>
 <td>155</td>
 <td>11</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>Yes</td></tr>
 <tr class="b">
 <td>selenium-safari-driver-2.53.0.jar</td>
-<td>86.05 kB</td>
+<td>86 kB</td>
 <td>31</td>
 <td>19</td>
 <td>1</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>Yes</td></tr>
 <tr class="a">
 <td>selenium-support-2.53.0.jar</td>
-<td>168.58 kB</td>
+<td>168.6 kB</td>
 <td>169</td>
 <td>150</td>
 <td>9</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>Yes</td></tr>
 <tr class="b">
 <th>Total</th>
@@ -820,15 +823,15 @@ file comparators, endian transformation classes, and much more.</p>
 <th>Debug Information</th></tr>
 <tr class="a">
 <td>26</td>
-<td>11.45 MB</td>
+<td>11.4 MB</td>
 <td>7483</td>
 <td>6361</td>
 <td>300</td>
-<td>1.6</td>
+<td>1.7</td>
 <td>25</td></tr>
 <tr class="b">
 <td>compile: 23</td>
-<td>compile: 9.85 MB</td>
+<td>compile: 9.9 MB</td>
 <td>compile: 5893</td>
 <td>compile: 5278</td>
 <td>compile: 188</td>
@@ -836,7 +839,7 @@ file comparators, endian transformation classes, and much more.</p>
 <td>compile: 22</td></tr>
 <tr class="a">
 <td>test: 3</td>
-<td>test: 1.59 MB</td>
+<td>test: 1.6 MB</td>
 <td>test: 1590</td>
 <td>test: 1083</td>
 <td>test: 112</td>
