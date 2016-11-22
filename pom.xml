@@ -4,7 +4,7 @@
 
     <groupId>org.slieb</groupId>
     <artifactId>selenium-driver-provider</artifactId>
-    <version>1.3</version>
+    <version>1.4-SNAPSHOT</version>
     <url>https://github.com/StefanLiebenberg/selenium-driver-provider</url>
     <description>A library to control the selection of web drivers from environment variables.</description>
 
@@ -63,7 +63,7 @@
         <developerConnection>
             scm:git:git@github.com:StefanLiebenberg/selenium-driver-provider.git
         </developerConnection>
-        <tag>selenium-driver-provider-1.3</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
