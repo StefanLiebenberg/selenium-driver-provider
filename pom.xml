@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>selenium-driver-provider</artifactId>
-    <version>1.5-SNAPSHOT</version>
+    <version>1.5</version>
     <url>https://github.com/StefanLiebenberg/selenium-driver-provider</url>
     <description>A library to control the selection of web drivers from environment variables.</description>
 
@@ -61,7 +61,7 @@
         <developerConnection>
             scm:git:git@github.com:StefanLiebenberg/selenium-driver-provider.git
         </developerConnection>
-        <tag>HEAD</tag>
+        <tag>selenium-driver-provider-1.5</tag>
     </scm>
 
     <developers>
