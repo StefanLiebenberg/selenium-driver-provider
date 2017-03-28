@@ -1,13 +1,12 @@
 package org.slieb.selenium;
 
-import org.junit.Assume;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
-import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.util.function.Supplier;
+
+import static org.junit.Assume.assumeNoException;
 
 public class LocalRemoteWebDriverFactoryIntegrationTest {
 
@@ -22,56 +21,41 @@ public class LocalRemoteWebDriverFactoryIntegrationTest {
 
     @Test
     public void startSafariTest() throws InterruptedException {
-        try {
-            final SafariDriver safari = factory.getSafariDriver();
-            safari.get(URL);
-            safari.close();
-        } catch (BrowserInstantiationException ignored) {
-            Assume.assumeNoException(ignored);
-        }
+        testGenericBrowser(() -> factory.getSafariDriver());
     }
 
     @Test
     public void startFirefoxTest() throws InterruptedException {
-        try {
-            final FirefoxDriver firefox = factory.getFirefoxDriver();
-            firefox.get(URL);
-            firefox.close();
-        } catch (BrowserInstantiationException ignored) {
-            Assume.assumeNoException(ignored);
-        }
+        testGenericBrowser(() -> factory.getFirefoxDriver());
     }
 
     @Test
     public void startChromeTest() throws InterruptedException {
-        try {
-            final ChromeDriver chrome = factory.getChromeDriver();
-            chrome.get(URL);
-            chrome.close();
-        } catch (BrowserInstantiationException ignored) {
-            Assume.assumeNoException(ignored);
-        }
+        testGenericBrowser(() -> factory.getChromeDriver());
     }
 
     @Test
     public void startIETest() throws InterruptedException {
-        try {
-            final InternetExplorerDriver ie = factory.getInternetExplorerDriver();
-            ie.get(URL);
-            ie.close();
-        } catch (BrowserInstantiationException ignored) {
-            Assume.assumeNoException(ignored);
-        }
+        testGenericBrowser(() -> factory.getInternetExplorerDriver());
     }
 
     @Test
     public void startPhantomjsTest() throws InterruptedException {
+        testGenericBrowser(() -> factory.getPhantomDriver());
+    }
+
+    public void testGenericBrowser(Supplier<RemoteWebDriver> supplier) {
+        RemoteWebDriver remoteWebDriver = null;
         try {
-            final PhantomJSDriver phantomjs = factory.getPhantomDriver();
-            phantomjs.get(URL);
-            phantomjs.close();
+            remoteWebDriver = supplier.get();
+            remoteWebDriver.get(URL);
+            remoteWebDriver.close();
         } catch (BrowserInstantiationException ignored) {
-            Assume.assumeNoException(ignored);
+            assumeNoException(ignored);
+        } finally {
+            if (remoteWebDriver != null) {
+                remoteWebDriver.quit();
+            }
         }
     }
 }

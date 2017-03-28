@@ -2,16 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.slieb</groupId>
     <artifactId>selenium-driver-provider</artifactId>
     <version>1.4-SNAPSHOT</version>
     <url>https://github.com/StefanLiebenberg/selenium-driver-provider</url>
     <description>A library to control the selection of web drivers from environment variables.</description>
 
     <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>9</version>
+        <groupId>org.slieb</groupId>
+        <artifactId>slieb-parent</artifactId>
+        <version>1.1</version>
     </parent>
 
     <licenses>
@@ -23,8 +22,7 @@
     </licenses>
 
     <properties>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <plugin.maven-compiler-plugin>3.5.1</plugin.maven-compiler-plugin>
@@ -46,8 +44,8 @@
         <dep.maven>3.3.1</dep.maven>
         <dep.junit>4.12</dep.junit>
         <dep.mockito>2.0.2-beta</dep.mockito>
-        <dep.selenium>3.0.1</dep.selenium>
-        <dep.phantomjsdriver>1.3.0</dep.phantomjsdriver>
+        <dep.selenium>3.3.1</dep.selenium>
+        <dep.phantomjsdriver>1.4.1</dep.phantomjsdriver>
     </properties>
 
     <prerequisites>
@@ -181,16 +179,7 @@
                     </dependency>
                 </dependencies>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${plugin.maven-compiler-plugin}</version>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
-                    <encoding>${project.build.sourceEncoding}</encoding>
-                </configuration>
-            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
