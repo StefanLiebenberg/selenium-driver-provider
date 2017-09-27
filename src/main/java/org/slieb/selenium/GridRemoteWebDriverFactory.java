@@ -31,6 +31,11 @@ public class GridRemoteWebDriverFactory extends RemoteWebDriverFactory {
         return getRemoteDriver(DesiredCapabilities.chrome());
     }
 
+    @Override
+    public RemoteWebDriver getChromeHeadlessDriver() {
+        throw new UnsupportedOperationException("Headless not available in the grid mode.");
+    }
+
     public RemoteWebDriver getPhantomDriver() {
         return getRemoteDriver(DesiredCapabilities.phantomjs());
     }

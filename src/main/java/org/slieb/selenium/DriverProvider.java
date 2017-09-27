@@ -54,7 +54,7 @@ public class DriverProvider {
      * Returns a remote driver instance.
      * <p>Command line options can affect this with</p>
      * <p>
-     * -DdriverProvider.borwser=(firefox|chrome|safari|ie|phantomjs)
+     * -DdriverProvider.borwser=(firefox|chrome|chrome_headless|safari|ie|phantomjs)
      * -DdriverProvider.platform=(linux|windows)
      * -DdriverProvider.version=2.0
      * -DdriverProvider.mode=(grid|local)
@@ -68,6 +68,8 @@ public class DriverProvider {
                 return factory.getFirefoxDriver();
             case CHROME:
                 return factory.getChromeDriver();
+            case CHROME_HEADLESS:
+                return factory.getChromeHeadlessDriver();
             case IE:
                 return factory.getInternetExplorerDriver();
             case SAFARI:
@@ -95,11 +97,11 @@ public class DriverProvider {
 
 
     public enum Mode {
-        LOCAL, GRID;
+        LOCAL, GRID
     }
 
     public enum Browser {
-        FIREFOX, CHROME, IE, SAFARI, PHANTOMJS, ANY;
+        FIREFOX, CHROME, CHROME_HEADLESS, IE, SAFARI, PHANTOMJS, ANY
     }
 
 

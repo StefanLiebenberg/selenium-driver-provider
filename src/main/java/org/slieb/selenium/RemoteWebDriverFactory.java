@@ -17,6 +17,8 @@ public abstract class RemoteWebDriverFactory {
 
     public abstract RemoteWebDriver getChromeDriver();
 
+    public abstract RemoteWebDriver getChromeHeadlessDriver();
+
     public abstract RemoteWebDriver getSafariDriver();
 
     public abstract RemoteWebDriver getPhantomDriver();
@@ -29,6 +31,11 @@ public abstract class RemoteWebDriverFactory {
 
         try {
             return getChromeDriver();
+        } catch (Exception ignored) {
+        }
+
+        try {
+            return getChromeHeadlessDriver();
         } catch (Exception ignored) {
         }
 

@@ -1,6 +1,7 @@
 package org.slieb.selenium;
 
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
@@ -51,6 +52,26 @@ public class LocalRemoteWebDriverFactory extends RemoteWebDriverFactory {
     public ChromeDriver getChromeDriver() {
         try {
             return new ChromeDriver(DesiredCapabilities.chrome());
+        } catch (RuntimeException exception) {
+            throw new BrowserInstantiationException("Failed to start chrome driver", exception);
+        }
+    }
+
+    /**
+     * Creates a new instance of chrome driver.
+     *
+     * @return a ChromeDriver instance.
+     */
+    @Override
+    public ChromeDriver getChromeHeadlessDriver() {
+        try {
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless", "--no-sandbox", "--disable-gpu");
+
+            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            capabilities.setCapability(  "chromeOptions", chromeOptions);
+
+            return new ChromeDriver(capabilities);
         } catch (RuntimeException exception) {
             throw new BrowserInstantiationException("Failed to start chrome driver", exception);
         }

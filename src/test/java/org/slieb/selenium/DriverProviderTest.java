@@ -20,7 +20,7 @@ public class DriverProviderTest {
     RemoteWebDriverFactory factory;
 
     @Mock
-    RemoteWebDriver firefoxDriver, chromeDriver, safariDriver, ieDriver, phantomDriver, anyDriver;
+    RemoteWebDriver firefoxDriver, chromeDriver, chromeHeadlessDriver, safariDriver, ieDriver, phantomDriver, anyDriver;
 
     DriverProvider provider;
 
@@ -31,6 +31,7 @@ public class DriverProviderTest {
         Mockito.when(configurator.getBrowserVersion()).thenReturn(null);
         Mockito.when(factory.getAnyDriver()).thenCallRealMethod();
         Mockito.when(factory.getChromeDriver()).thenReturn(chromeDriver);
+        Mockito.when(factory.getChromeHeadlessDriver()).thenReturn(chromeHeadlessDriver);
         Mockito.when(factory.getFirefoxDriver()).thenReturn(firefoxDriver);
         Mockito.when(factory.getInternetExplorerDriver()).thenReturn(ieDriver);
         Mockito.when(factory.getSafariDriver()).thenReturn(safariDriver);
@@ -80,6 +81,9 @@ public class DriverProviderTest {
         Assert.assertEquals(chromeDriver, provider.getRemoteWebDriver());
 
         Mockito.when(factory.getChromeDriver()).thenThrow(new RuntimeException("failure!"));
+        Assert.assertEquals(chromeHeadlessDriver, provider.getRemoteWebDriver());
+
+        Mockito.when(factory.getChromeHeadlessDriver()).thenThrow(new RuntimeException("failure!"));
         Assert.assertEquals(ieDriver, provider.getRemoteWebDriver());
 
         Mockito.when(factory.getInternetExplorerDriver()).thenThrow(new RuntimeException("failure!"));
@@ -95,6 +99,7 @@ public class DriverProviderTest {
         Mockito.when(factory.getSafariDriver()).thenThrow(new RuntimeException("failure!"));
         Mockito.when(factory.getInternetExplorerDriver()).thenThrow(new RuntimeException("failure!"));
         Mockito.when(factory.getChromeDriver()).thenThrow(new RuntimeException("failure!"));
+        Mockito.when(factory.getChromeHeadlessDriver()).thenThrow(new RuntimeException("failure!"));
         Mockito.when(factory.getFirefoxDriver()).thenThrow(new RuntimeException("failure!"));
         Assert.assertEquals(null, provider.getRemoteWebDriver());
     }
