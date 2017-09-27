@@ -2,16 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.betgenius</groupId>
     <artifactId>selenium-driver-provider</artifactId>
     <version>1.5-SNAPSHOT</version>
     <url>https://github.com/StefanLiebenberg/selenium-driver-provider</url>
     <description>A library to control the selection of web drivers from environment variables.</description>
-
-    <parent>
-        <groupId>org.slieb</groupId>
-        <artifactId>slieb-parent</artifactId>
-        <version>1.1</version>
-    </parent>
 
     <licenses>
         <license>
@@ -26,11 +21,9 @@
         <dep.mockito>2.0.2-beta</dep.mockito>
         <dep.selenium>3.5.3</dep.selenium>
         <dep.phantomjsdriver>1.4.3</dep.phantomjsdriver>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-
-    <prerequisites>
-        <maven>${dep.maven}</maven>
-    </prerequisites>
 
     <scm>
         <url>https://github.com/StefanLiebenberg/selenium-driver-provider</url>
